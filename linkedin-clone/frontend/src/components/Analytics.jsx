@@ -1,0 +1,2 @@
+import { FiBarChart2, FiChevronRight } from "react-icons/fi";
+export default function Analytics() { return <section className="profile-card sidebar-card"><div className="section-heading"><h2>Profile analytics</h2><FiBarChart2 className="muted-icon" /></div><div className="analytics-list"><div><strong>128</strong><span>profile views</span></div><div><strong>2,450</strong><span>post impressions</span></div><div><strong>34</strong><span>search appearances</span></div></div><button className="text-action">See all analytics <FiChevronRight /></button></section>; }

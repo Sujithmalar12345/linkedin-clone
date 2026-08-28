@@ -1,0 +1,2 @@
+import { FiEdit3, FiChevronRight } from "react-icons/fi";
+export default function OpenToWork() { return <section className="profile-card open-to"><div><span className="eyebrow">Open to work · Recruiters only</span><h2>Find a role where craft meets momentum.</h2><p>Austin + surrounding areas · On-site · Hybrid · Remote</p></div><button className="icon-button" aria-label="Edit open to work"><FiEdit3 /></button><button className="text-action">Show details <FiChevronRight /></button></section>; }

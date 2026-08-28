@@ -1,0 +1,3 @@
+import { FiEdit3, FiPlus } from "react-icons/fi";
+import { demoProfile } from "../data/demoProfile";
+export default function Education({ onAdd }) { return <section className="profile-card section-card"><div className="section-heading"><h2>Education</h2><div><button className="icon-button" onClick={onAdd} aria-label="Add education"><FiPlus /></button><button className="icon-button" aria-label="Edit education"><FiEdit3 /></button></div></div>{demoProfile.educationHistory.map((item) => <article className="timeline-item" key={item.school}><div className="brand-mark school-mark">A</div><div><h3>{item.school}</h3><strong>{item.degree}</strong><p className="muted">{item.dates}</p></div></article>)}</section>; }

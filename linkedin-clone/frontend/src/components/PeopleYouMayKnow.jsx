@@ -1,0 +1,3 @@
+import { FiUserPlus } from "react-icons/fi";
+import { demoProfile } from "../data/demoProfile";
+export default function PeopleYouMayKnow() { return <section className="profile-card sidebar-card"><h2>People you may know</h2><div className="people-list">{demoProfile.suggestions.map((person) => <div className="person" key={person.name}><div className={`avatar avatar-sm ${person.color}`}>{person.initials}</div><div className="person-copy"><strong>{person.name}</strong><span>{person.title}</span><button className="connect-button"><FiUserPlus /> Connect</button></div></div>)}</div><button className="text-action see-more">Show more</button></section>; }
